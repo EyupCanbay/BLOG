@@ -1,0 +1,186 @@
+/* Genel stil ayarları */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar a:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+nav .site-title h1 {
+    
+    font-size: 24px;
+    margin: 0;
+}
+
+nav .site-title p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #bdc3c7;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+}
+
+/* İçerik kutusu */
+.content {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Create Blog Sayfası */
+.create-blogs label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.create-blogs input[type="text"], 
+.create-blogs textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.create-blogs button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.create-blogs button:hover {
+    background-color: #2980b9;
+}
+
+/* Blog Detayları */
+.details h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.details .delete {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.details .delete:hover {
+    background-color: #c0392b;
+}
+
+/* About Sayfası */
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Blog Listesi */
+.blogs h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.blogs a.single {
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.blogs a.single:hover {
+    background-color: #f0f0f0;
+}
+
+.blogs h3.title {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #3498db;
+}
+
+.blogs p.snippet {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2c3e50;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
